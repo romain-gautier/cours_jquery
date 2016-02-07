@@ -25,7 +25,10 @@
     <script src="../jquery.js"></script>
     <script>
       $(function() {
-        // Insérer le code jQuery ici
+        $(".rouge").fadeOut("slow",function() {
+          $(this).fadeIn("slow");
+        });
+        $('.rouge').css('background','red').css('color','yellow');
       });
       </script>
   </body>
