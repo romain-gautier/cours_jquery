@@ -12,11 +12,13 @@
     <script src="../jquery.js"></script>
     <script>
       $(function() {
-        var premier = $('p:first').text();
-        var dernier = $('p:last').text();
-        $('p').text(function(index,actuel) {
-          alert('Paragraphe ' + (index+1) + ' : '+actuel);
-        });
+        alert($('p').html());
+        $('p:first').html('<a href="http://www.google.com">Moteur de recherche Google</a>');
+        // var premier = $('p:first').text();
+        // var dernier = $('p:last').text();
+        // $('p').text(function(index,actuel) {
+          // alert('Paragraphe ' + (index+1) + ' : '+actuel);
+        // });
       });
     </script>
   </body>
