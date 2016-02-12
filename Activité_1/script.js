@@ -13,7 +13,7 @@ $(function() {
   $('#buttonZone').click(function(){
     $('hr').after('<div id="textZone">id zone de texte <input type="text" id="idZone"> <button id="okZone" class="btn btn-default">Ok</button></div>');
     $('#okZone').click(function(){
-      $('#gauche').append('<input id="'+ $('#idZone').val() + '" type="text"><br><br>');
+      $('#gauche').append('<input id="'+ $('#idZone').val() + '" type="text" placeholder="'+ $('#idZone').val() + '"><br><br>');
       $('#textZone').remove();
     });
   });
