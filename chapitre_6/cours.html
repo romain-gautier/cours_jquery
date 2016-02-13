@@ -1,0 +1,12 @@
+Cliquez sur l'image avec un des boutons de la souris.<br ></code>
+<img id="target" src="petitchat.jpg"><br />
+<span id="rapport"></span>
+
+<script src="../jquery.js"></script>
+<script>
+  $(function() {
+    $('#target').mousedown(function(e){
+      $('#rapport').html('Événement : ' + e.type + '. Bouton pressé : ' +  e.which );
+    });
+  });
+</script>
