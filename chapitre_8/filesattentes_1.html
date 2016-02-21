@@ -1,0 +1,25 @@
+<button id="enchainer">Enchaîner les animations</button>
+<button id="nePasEnchainer">Ne pas enchaîner les animations</button><br />
+<button id="executerEnMemeTemps">Exécuter les animations en même temps</button>
+<button id="etatInitial">État initial</button><br /><br />
+<img src="logo.png" style="border: 2px black solid;">
+
+<script src="../jquery.js"></script>
+<script>
+  $(function() {
+    $('#enchainer').click( function() {
+      $('img').animate({ 'border-width': '100'}, 1500 )
+              .animate({ 'width': '-=100'}, 1500);
+    });
+    $('#nePasEnchainer').click( function() {
+      $('img').animate({ 'border-width': '100'}, { queue: false, duration: 1500 })
+              .animate({ 'width': '-=100'}, 1500);
+    });
+    $('#executerEnMemeTemps').click( function() {
+      $('img').animate({ 'border-width': '100', 'width': '-=100' }, 1500);
+    });
+    $('#etatInitial').click( function() {
+      $('img').css({'border-width': '2px', width: '200'});
+    });
+  });
+</script>

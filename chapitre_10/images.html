@@ -1,0 +1,27 @@
+<style type="text/css">
+  img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  #montagneGrand{
+    display: none;
+  }
+</style>
+
+<img id="moiPetit" src="romainMini.jpg">
+<img id="moiGrand" src="romain.jpg">
+
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $('#moiPetit').mouseover(function() {
+      $(this).fadeOut(1000);
+      $('#moiGrand').fadeIn(1000);
+    });
+    $('#moiGrand').mouseout(function() {
+      $(this).fadeOut(1000);
+      $('#moiPetit').fadeIn(1000);
+    });
+  });
+</script>

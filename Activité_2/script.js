@@ -5,6 +5,7 @@ $(function() {
     $('hr').after('<div class ="apparition" id="textLabel">Texte du label <input type="text" id="idLabel"> <button id="okLabel" class="btn btn-default">Ok</button> <button id="nulLabel" class="btn btn-default">Annuler</button></div>');
     // apparition de la zone de saisie qui n'est pas apparente par défaut dans le CSS (display: none)
     $('.apparition').fadeIn('slow');
+    $('#idLabel').focus();
     // on désactive les boutons label, zone de texte et bouton et les ombrages
     $('#buttonLabel, #buttonZone, #buttonBouton').prop("disabled", true).css('box-shadow', 'none');
     // si click sur ok
@@ -31,6 +32,7 @@ $(function() {
     $('hr').after('<div class="apparition" id="textZone">id zone de texte <input type="text" id="idZone"> <button id="okZone" class="btn btn-default">Ok</button> <button id="nulLabel" class="btn btn-default">Annuler</button></div>');
     // apparition de la zone de saisie qui n'est pas apparente par défaut dans le CSS (display: none)
     $('.apparition').fadeIn('slow');
+    $('#idZone').focus();
     // on désactive les boutons label, zone de texte et bouton et les ombrages
     $('#buttonLabel, #buttonZone, #buttonBouton').prop("disabled", true).css('box-shadow', 'none');
     // si click sur ok
@@ -56,6 +58,7 @@ $(function() {
     $('hr').after('<div class = "apparition" id="textBouton">Texte bouton <input type="text" id="idBouton"> <button id="okBouton" class="btn btn-default">Ok</button> <button id="nulLabel" class="btn btn-default">Annuler</button></div>');
     // apparition de la zone de saisie qui n'est pas apparente par défaut dans le CSS (display: none)
     $('.apparition').fadeIn('slow');
+    $('#idBouton').focus();
     // on désactive les boutons label, zone de texte et bouton et les ombrages
     $('#buttonLabel, #buttonZone, #buttonBouton').prop("disabled", true).css('box-shadow', 'none');
     // si click sur ok
