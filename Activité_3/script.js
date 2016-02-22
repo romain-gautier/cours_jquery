@@ -11,7 +11,7 @@ $(function() {
     $('.apparition').fadeIn('slow');
     $('#idLabel').focus();
     // apparition du texte d'aide
-    $('.help').fadeIn('slow');
+    $('#help').fadeIn(3000);
 
     // on désactive les boutons label, zone de texte et bouton et les ombrages
     $('#buttonLabel, #buttonZone, #buttonBouton').prop("disabled", true).css('box-shadow', 'none');
@@ -22,6 +22,7 @@ $(function() {
       // on réactive les boutons label, zone de texte et bouton et les ombrages
       $('#buttonLabel, #buttonZone, #buttonBouton').prop("disabled", false).removeAttr('style');
       // disparition de la zone de saisie dans la partie droite avec fadeOut
+      $('#help').fadeOut('slow');
       $('.apparition').fadeOut('slow', function() {
         $('#textLabel').remove();
       });
@@ -29,6 +30,7 @@ $(function() {
     // si click sur annuler :
     $('#nulLabel').click(function() {
       $('#textLabel').remove();
+      $('#help').remove();
       // on réactive les boutons label, zone de texte et bouton et les ombrages
       $('#buttonLabel, #buttonZone, #buttonBouton').prop("disabled", false).removeAttr('style');
     });
