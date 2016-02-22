@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+      body {
+        margin: 0;
+      }
+      #gauche {
+        float: left;
+        width: 70%;
+        height: 1000px;
+        background-color: #EFECCA;
+        padding-left: 10px;
+        padding-top: 10px;
+      }
+      #droite {
+        background-color: #CEFFF8;
+        height: 1000px;
+        padding : 10px;
+        padding-left: 71%;
+      }
+      hr {
+        height: 2px;
+        background-color:#555;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 75%;
+      }
+      .apparition {
+        display: none;
+      }
+      .btn:hover {
+        box-shadow: 2px 2px 1px #888;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="gauche">
+    </div>
+    <div id="droite" class="text-center">
+      <h5>Utilisez ces boutons pour créer votre formulaire</h5><br><br>
+      <button id="buttonLabel" class="btn btn-success">Label</button>
+      <button id="buttonZone" class="btn btn-success">Zone de texte</button>
+      <button id="buttonBouton" class="btn btn-success">Bouton</button>
+      <hr>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
