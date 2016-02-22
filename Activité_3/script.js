@@ -3,11 +3,14 @@ $(function() {
   // Lorsque l'on click sur label
   $('#buttonLabel').click(function(){
     $('hr').after('<div class ="apparition" id="textLabel">Texte du label <input type="text" id="idLabel"> <button id="okLabel" class="btn btn-default">Ok</button> <button id="nulLabel" class="btn btn-default">Annuler</button></div>');
-    $('#textLabel').after('<div id ="help"> </div>')
+    // création d'une div pour afficher l'aide
+    $('.apparition').after('<div id ="help"> </div>')
+    // mise à jour du texte d'aide dans la div à partir du fichier help.html
     $('#help').hide().load('help.html #label');
     // apparition de la zone de saisie qui n'est pas apparente par défaut dans le CSS (display: none)
     $('.apparition').fadeIn('slow');
     $('#idLabel').focus();
+    // apparition du texte d'aide
     $('.help').fadeIn('slow');
 
     // on désactive les boutons label, zone de texte et bouton et les ombrages
