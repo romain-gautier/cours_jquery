@@ -4,7 +4,7 @@ $(function() {
   $('#buttonLabel').click(function(){
     $('hr').after('<div class ="apparition" id="textLabel">Texte du label <input type="text" id="idLabel"> <button id="okLabel" class="btn btn-default">Ok</button> <button id="nulLabel" class="btn btn-default">Annuler</button></div>');
     // création d'une div pour afficher l'aide
-    $('.apparition').after('<div id ="help"> </div>')
+    $('.apparition').after('<br> <div id ="help" class="text-justify" style ="color: red"> </div>');
     // mise à jour du texte d'aide dans la div à partir du fichier help.html
     $('#help').hide().load('help.html #label');
     // apparition de la zone de saisie qui n'est pas apparente par défaut dans le CSS (display: none)
@@ -41,7 +41,7 @@ $(function() {
   $('#buttonZone').click(function(){
     $('hr').after('<div class="apparition" id="textZone">id zone de texte <input type="text" id="idZone"> <button id="okZone" class="btn btn-default">Ok</button> <button id="nulLabel" class="btn btn-default">Annuler</button></div>');
     // création d'une div pour afficher l'aide
-    $('.apparition').after('<div id ="help"> </div>')
+    $('.apparition').after('<br> <div id ="help" class="text-justify" style ="color: red"> </div>');
     // mise à jour du texte d'aide dans la div à partir du fichier help.html
     $('#help').hide().load('help.html #zone');
     // apparition de la zone de saisie qui n'est pas apparente par défaut dans le CSS (display: none)
@@ -76,7 +76,7 @@ $(function() {
   $('#buttonBouton').click(function(){
     $('hr').after('<div class = "apparition" id="textBouton">Texte bouton <input type="text" id="idBouton"> <button id="okBouton" class="btn btn-default">Ok</button> <button id="nulLabel" class="btn btn-default">Annuler</button></div>');
     // création d'une div pour afficher l'aide
-    $('.apparition').after('<div id ="help"> </div>')
+    $('.apparition').after('<br> <div id ="help" class="text-justify" style="color: red"> </div>');
     // mise à jour du texte d'aide dans la div à partir du fichier help.html
     $('#help').hide().load('help.html #bouton');
     // apparition de la zone de saisie qui n'est pas apparente par défaut dans le CSS (display: none)
